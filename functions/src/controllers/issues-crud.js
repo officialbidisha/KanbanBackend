@@ -14,10 +14,7 @@ const memberModel = require('../models/members');
 /**
  * Get all issues
  */
-const getIssues = handleRequest(async (req,res) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT,DELETE");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+const getIssues = handleRequest(async () => {
       const data = await issueModel.find();
       console.log('data',data);
       return data;
