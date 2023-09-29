@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+require('dotenv').config();
 
 const connect = async (_client) => {
   // create a new connection if one doesn't already exist
