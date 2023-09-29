@@ -5,7 +5,7 @@ const connect = async (_client) => {
   // create a new connection if one doesn't already exist
   if (!_client) {
     mongoose.set("strictQuery", false);
-    _client = await mongoose.connect('mongodb+srv://bidisha:bidisha@cluster0.vns42.mongodb.net/?retryWrites=true&w=majority', {
+    _client = await mongoose.connect('mongodb+srv://bidisha:bidisha@cluster0.vns42.mongodb.net/kanban', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
